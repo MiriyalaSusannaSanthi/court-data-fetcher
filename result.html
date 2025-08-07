@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h2>Case Details</h2>
+    <ul class="list-group mt-3">
+        <li class="list-group-item"><strong>Parties:</strong> {{ result.parties }}</li>
+        <li class="list-group-item"><strong>Filing Date:</strong> {{ result.filing_date }}</li>
+        <li class="list-group-item"><strong>Next Hearing:</strong> {{ result.next_hearing }}</li>
+        <li class="list-group-item"><strong>Order PDF:</strong> <a href="{{ result.pdf_link }}" target="_blank">Download</a></li>
+    </ul>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Search Again</a>
+</div>
+</body>
+</html>

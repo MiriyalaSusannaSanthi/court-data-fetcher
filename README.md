@@ -1,2 +1,16 @@
-# court-data-fetcher
-Court Data Dashboard is a web application designed to fetch, organize, and visualize data from Indian court websites. It automates the retrieval of case-related information, such as case status, hearing dates, or party names, and presents it through an intuitive dashboard.
+# Court Data Fetcher
+
+A Flask-based web application to fetch Indian court case details using case type, number, and filing year.
+
+## 📸 Preview
+Includes CAPTCHA field and court image.
+
+## 🔧 Setup Instructions
+
+```bash
+git clone https://github.com/YOUR_USERNAME/court_data_fetcher.git
+cd court_data_fetcher
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
+python app.py
